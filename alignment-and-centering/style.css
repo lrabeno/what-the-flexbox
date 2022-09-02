@@ -202,12 +202,18 @@ input::-moz-focus-inner {
   display: flex;
   border: 10px solid goldenrod;
   height: 100vh;
+  flex-wrap: wrap;
   /* display: flex;
   border: 10px solid mistyrose;
   height: 100vh;
   align-items: flex-start; */
 }
 
+/*  Using 20px in calc because 10px margibn on each side!!! */
+.box {
+  width: calc(33.333333% - 20px);
+  margin: 10px;
+}
 /* .box {
   width:33.333%;
 }
