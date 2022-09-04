@@ -200,33 +200,24 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
-  border: 10px solid goldenrod;
+  /* border: 10px solid goldenrod;
   height: 100vh;
-  flex-wrap: wrap;
-  /* display: flex;
-  border: 10px solid mistyrose;
-  height: 100vh;
-  align-items: flex-start; */
+  flex-wrap: wrap; */
 }
 
 /*  Using 20px in calc because 10px margibn on each side!!! */
 .box {
-  width: calc(33.333333% - 20px);
-  margin: 10px;
-}
-/* .box {
-  width:33.333%;
-}
-
-.box2 {
-  padding-bottom: 200px;
+  /* flex 1 evenly disrubtes boxes on a page */
+  flex: 1;
+  /* width: calc(33.333333% - 20px);
+  margin: 10px; */
 }
 
-.box6 {
-  padding-bottom: 0;
+/* default order is 0 */
+.box3 {
+  order: 1;
 }
 
-.box9 {
-  padding-bottom: 50px;
-  align-self:stretch;
-} */
+.box7 {
+  order: 2;
+}
