@@ -205,7 +205,15 @@ input::-moz-focus-inner {
   flex-wrap: wrap; */
 }
 
+/* .box {
+  /* flex 1 evenly disrubtes boxes on a page */
+/* flex: 1; */
+
 /*  Using 20px in calc because 10px margibn on each side!!! */
+/* width: calc(33.333333% - 20px);
+  margin: 10px; 
+} */
+
 .box {
   /* flex 1 evenly disrubtes boxes on a page */
   flex: 1;
