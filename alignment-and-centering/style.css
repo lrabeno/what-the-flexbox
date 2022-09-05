@@ -200,32 +200,36 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   /* border: 10px solid goldenrod;
   height: 100vh;
   flex-wrap: wrap; */
 }
 
-/* .box {
-  /* flex 1 evenly disrubtes boxes on a page */
-/* flex: 1; */
-
-/*  Using 20px in calc because 10px margibn on each side!!! */
+/*  Using 20px in calc because 10px margin on each side!!! */
 /* width: calc(33.333333% - 20px);
   margin: 10px; 
 } */
 
 .box {
   /* flex 1 evenly disrubtes boxes on a page */
-  flex: 1;
+  /* flex: 1; */
+
   /* width: calc(33.333333% - 20px);
   margin: 10px; */
 }
 
 /* default order is 0 */
+/* order is great for popping things out of order! In the 
+   example below box 3 and box 7 are put towards the end of
+   all of the flex-items because they're order is greater 
+   than zero. 
+*/
 .box3 {
-  order: 1;
+  /* order: 1; */
 }
 
 .box7 {
-  order: 2;
+  /* order: 2; */
 }
